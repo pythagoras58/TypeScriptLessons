@@ -11,3 +11,12 @@ function sum(a: number,b:number) {
 
 console.log(sum(45,56));
 
+
+let word = 'This is a sentence';
+
+function removeSPace(text: string) {
+    return text.split(' ').join();
+}
+
+document.getElementById('a').innerText = removeSPace(word);
+
