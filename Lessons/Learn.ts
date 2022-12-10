@@ -29,5 +29,7 @@ numbers.filter((item)=>{
     return item!==2;
 })
 
-
+numbers.forEach((item)=>{
+    console.log(item);
+})
 
