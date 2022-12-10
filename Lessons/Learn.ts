@@ -15,8 +15,19 @@ console.log(sum(45,56));
 let word = 'This is a sentence';
 
 function removeSPace(text: string) {
-    return text.split(' ').join();
+    return text.split(' ').join('');
 }
 
-document.getElementById('a').innerText = removeSPace(word);
+document.addEventListener("DOMContentLoaded", function (){
+    document.getElementById('a').innerText = removeSPace(word);
+})
+
+let numbers: number[] = [1,2,3,4,5,6]
+let abc:string[] = ['a','b','c'];
+
+numbers.filter((item)=>{
+    return item!==2;
+})
+
+
 
