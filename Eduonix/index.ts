@@ -1,3 +1,2 @@
-// $(document).on('click',function (e) {
-//
-// });
+// Type inference
+
