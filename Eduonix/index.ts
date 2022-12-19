@@ -14,3 +14,21 @@ inventoryItem.createdDate = new Date;
 inventoryItem.orginalCost = 4533;
 
 console.log(inventoryItem);
+
+
+// interfaces
+interface InventoryItems {
+    displayName:string;
+    inventoryType:string;
+    trackingNumber : string;
+    createdDate:Date;
+    orginalCost:number;
+}
+
+
+function saveInventoryItem(item : InventoryItems) {
+    item.createdDate = new Date();
+    item.inventoryType = 'Furniture';
+    item.orginalCost = 2231;
+    item.trackingNumber = 'A31dd22';
+}
